@@ -6,6 +6,8 @@ The most minimalist of minimalist Twitter clients.
 ## purpose
 The idea for wrbl came out of a conversation with @anthonyongaro, @pyry, and @experimat about ways we could be more intentional about our use of social.
 
+wrbl picks one tweet for you every half-hour, and will not reload until a half-hour has elapsed.
+
 ## instructions
 First, clone this repository:
 
@@ -27,7 +29,9 @@ Then, find your Twitter App Credentials:
 7. Add your **Access Token** and **Access Token Secret** into config.json.  
 8. Save and close config.json  
 
-Back in that terminal window you used before, run ```npm start``` and open a web browser to [http://localhost:8080](http://localhost:8080). Your one tweet per hour awaits!
+Back in that terminal window you used before, run ```npm start``` and open a web browser to [http://localhost:8080](http://localhost:8080). A more intentional twitter experience awaits!
+
+There is a [known bug](https://github.com/skylineproject/wrbl/issues/4) where one needs to reload the page one more time after first launching the app. We're working on it. :) If you have ideas for how to fix this, add them to the Issue record.
 
 
 ## status
