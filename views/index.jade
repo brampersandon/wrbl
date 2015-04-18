@@ -1,0 +1,6 @@
+extends layout
+
+block content
+  h1= tweet.text
+  p #{tweet.user.name} | #{"@"+tweet.user.screen_name}
+  a(href="https://twitter.com/#{tweet.user.screen_name}/status/#{tweet.id_str}") permalink

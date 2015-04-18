@@ -1,0 +1,8 @@
+{
+  "twit": {
+    "consumer_key":         "you know what to do"
+  , "consumer_secret":      "enter it here"
+  , "access_token":         "get it at http://dev.twitter.com"
+  , "access_token_secret":  "or ask @brandon_mn for help"
+  }
+}
