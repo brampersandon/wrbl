@@ -9,11 +9,11 @@ var state = { // this holds our constants, and shares the data the t.js module p
     if(state.last == null || (state.last.getTime() + state.period) < Date.now()){
       twit.get("statuses/home_timeline", function(err, data){
         if (err) { // this probably shouldn't happen.
-          state.current = "oops! there's an error: "+ err;
+          state.err = err;
           state.last = new Date();
           return;
         }
-        state.current = data[Math.floor(Math.random()*(data.length-1))];
+        state.current = data[1]; //Math.floor(Math.random()*(data.length-1))
         state.last = new Date();
       });
     }

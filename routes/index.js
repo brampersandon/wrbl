@@ -5,7 +5,7 @@ var twitter = require("../libs/t.js");
 /* GET home page. */
 router.get('/', function(req, res) {
   twitter.get();
-  res.render('index', { tweet: twitter.current });
+  res.render('index', { tweet: twitter.current, err: twitter.err });
 });
 
 module.exports = router;
