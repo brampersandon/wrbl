@@ -17,7 +17,7 @@ Ensure you have [Node.js](http://nodejs.org) installed on your computer. If you 
 
 In a terminal, open the directory created when you cloned this repo. Run the command: ```npm install``` to install the required dependencies.
 
-Then, find your Twitter App Credentials:
+Then, find your Twitter App Credentials:  
 1. Open the [Twitter Application Management page](https://apps.twitter.com)  
 2. Click **Create New App**  
 3. Enter whatever name and info you like (note that a website is required. For "oauth callback URL," enter twitter.com -- this part of wrbl is not yet implemented, so we won't be using that parameter until Issue #1 is resolved)  
@@ -38,4 +38,4 @@ wrbl is under active development. You're currently looking at *release 0.0.0*.
 
 2. *Make tweet selection smart.* Right now, wrbl picks one tweet at random from the past hour's tweets. See [Issue #2](https://github.com/skylineproject/wrbl/issues/2) for more info.  
 
-3. *Add inline reply, retweet, fav logic*. This depends on [Issue #1](https://github.com/skylineproject/wrbl/issues/1's resolution.  
+3. *Add inline reply, retweet, fav logic*. This depends on [Issue #1](https://github.com/skylineproject/wrbl/issues/1)'s resolution.  
