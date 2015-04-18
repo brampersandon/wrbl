@@ -10,7 +10,7 @@ The idea for wrbl came out of a conversation with @anthonyongaro, @pyry, and @ex
 First, clone this repository:
 
 ```bash
-git clone {}
+git clone https://github.com/skylineproject/wrbl
 ```
 
 Ensure you have [Node.js](http://nodejs.org) installed on your computer. If you do not, install it from the [Node.js website](http://nodejs.org).
