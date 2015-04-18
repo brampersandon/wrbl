@@ -31,7 +31,7 @@ Then, find your Twitter App Credentials:
 
 Back in that terminal window you used before, run ```npm start``` and open a web browser to [http://localhost:8080](http://localhost:8080). A more intentional twitter experience awaits!
 
-There is a [known bug](https://github.com/skylineproject/wrbl/issues/4) where one needs to reload the page one more time after first launching the app. We're working on it. :) If you have ideas for how to fix this, add them to the Issue record.
+There is a [known bug](https://github.com/skylineproject/wrbl/issues/3) where one needs to reload the page one more time after first launching the app. We're working on it. :) If you have ideas for how to fix this, add them to the Issue record.
 
 
 ## status
