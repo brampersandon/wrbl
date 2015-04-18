@@ -34,8 +34,8 @@ Back in that terminal window you used before, run ```npm start``` and open a web
 wrbl is under active development. You're currently looking at *release 0.0.0*.
 
 ## next steps
-1. *Implement OAuth.* Signing into wrbl should be as easy as logging in with your Twitter username and password. I simply haven't figured out how to do that yet. Twitter has some good info on their dev site, but I haven't yet been able to dig deep enough to feel good about the aspects of the implementation I could get running. See Issue #1 for more info.  
+1. *Implement OAuth.* Signing into wrbl should be as easy as logging in with your Twitter username and password. I simply haven't figured out how to do that yet. Twitter has some good info on their dev site, but I haven't yet been able to dig deep enough to feel good about the aspects of the implementation I could get running. See [Issue #1](https://github.com/skylineproject/wrbl/issues/1) for more info.  
 
-2. *Make tweet selection smart.* Right now, wrbl picks one tweet at random from the past hour's tweets. See Issue #2 for more info.  
+2. *Make tweet selection smart.* Right now, wrbl picks one tweet at random from the past hour's tweets. See [Issue #2](https://github.com/skylineproject/wrbl/issues/2) for more info.  
 
-3. *Add inline reply, retweet, fav logic*. This depends on Issue #1's resolution.  
+3. *Add inline reply, retweet, fav logic*. This depends on [Issue #1](https://github.com/skylineproject/wrbl/issues/1's resolution.  
