@@ -6,3 +6,8 @@ body {
 a {
   color: #00B7FF;
 }
+
+img {
+  width: 450px;
+  padding: 10px 0px;
+}

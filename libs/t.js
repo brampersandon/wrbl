@@ -1,6 +1,8 @@
 var Twit = require('twit');
 var config = require('../config.json');
 var twit = new Twit(config.twit);
+var src = "<a href='wrbl.brndn.xyz'>wrbl</a>";
+
 var state = { // this holds our constants, and shares the data the t.js module pulls with our router (router.js)
   last: null,
   period: 1800000, // every hour, pick a new tweet
@@ -17,13 +19,17 @@ var state = { // this holds our constants, and shares the data the t.js module p
         state.last = new Date();
       });
     }
+  },
+  fave: function(id){
+    twit.post("favorites/create", {id: id, source: src}, function(req, res) {
+      console.log('faved ' + id);
+    })
+  },
+  rt: function(id, text){
+    twit.post("statuses/retweet/"+id, {id: id, source: src}, function(req, res) {
+      console.log("rt'd " + id);
+    })
   }
-  /* This is the part where we'd implement OAuth, I think? Per https://dev.twitter.com/web/sign-in/implementing
-  , getToken: function(){
-    twit.post("oauth/request_token", {oauth_callback:"???"})
-  }
-  */
 }
-
 
 module.exports = state;

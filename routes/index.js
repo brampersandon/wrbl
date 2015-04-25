@@ -5,7 +5,22 @@ var twitter = require("../libs/t.js");
 /* GET home page. */
 router.get('/', function(req, res) {
   twitter.get();
-  res.render('index', { tweet: twitter.current, err: twitter.err });
+  if (twitter.current){
+    res.render('index', { tweet: twitter.current});
+  } else if (twitter.err) {
+    res.render('error', {err: twitter.err});
+  }
+  else {
+    res.send('reload pls');
+  }
 });
+router.get('/fave/:id', function(req, res){
+  twitter.fave(req.params.id);
+  res.redirect('/');
+})
+router.get('/rt/:id', function(req, res){
+  twitter.rt(req.params.id);
+  res.redirect('/');
+})
 
 module.exports = router;
